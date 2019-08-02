@@ -20,7 +20,7 @@
                         ))
   (send *robot* :put :lleg-contact-coords
         (make-cascoords :name :lleg-contact-coords
-                        :parent (send *robot* :link "RLEG_FOOT_LINK")
+                        :parent (send *robot* :link "LLEG_FOOT_LINK")
                         :coords (send (send *robot* :lleg-end-coords) :copy-worldcoords)
                         ))
   (send *robot* :put :rarm-contact-coords
@@ -66,7 +66,7 @@
                         ))
   (send *robot* :put :lleg-contact-coords
         (make-cascoords :name :lleg-contact-coords
-                        :parent (send *robot* :link "RLEG_FOOT_LINK")
+                        :parent (send *robot* :link "LLEG_FOOT_LINK")
                         :coords (send (send *robot* :lleg-end-coords) :copy-worldcoords)
                         ))
   (send *robot* :put :rarm-contact-coords

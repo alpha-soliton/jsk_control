@@ -102,7 +102,7 @@
   (send *ground-rleg* :newcoords
         (make-coords :pos (float-vector 0 -250 300) :rpy (list 0 0 (deg2rad -30))))
   (send *ground-lleg* :newcoords
-        (make-coords :pos (float-vector -100 400 200) :rpy (list 0 (deg2rad 20) 0)))
+        (make-coords :pos (float-vector 100 400 200) :rpy (list 0 (deg2rad 20) 0)))
   (send *ground-rarm* :newcoords
         (make-coords :pos (float-vector 800 -500 700) :rpy (list 0 0 0)))
   (send *ground-larm* :newcoords
@@ -504,7 +504,7 @@
                         ;;  (send (send sqp :config-task) :instant-config-task-list))
                         ))
                   ))
-  (send *sqp-opt* :optimize :loop-num 50)
+  (send *sqp-opt* :optimize :loop-num 20)
 
   (when output-filename
     (unix:system
