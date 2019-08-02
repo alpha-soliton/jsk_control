@@ -1,6 +1,7 @@
 ;;(load "./sample-sqp-optimization-instant.l")
 (load "../trajectory-configuration-task.l")
 (load "sample-musashi.l")
+(load "package://hrpsys_ros_bridge/euslisp/rtm-ros-robot-interface.l")
 
 
 (defun setup-contact-constraint-for-sample-sqp-optimization
